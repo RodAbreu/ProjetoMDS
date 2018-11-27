@@ -17,9 +17,18 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".CategoriasActivity"
+                android:name=".ListadeProdutosActivity"
                 android:label="@string/title_activity_categorias"
                 android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".CadastraProdutoActivity">
+        </activity>
+        <activity android:name=".ListaProdutosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

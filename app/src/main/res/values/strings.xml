@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">AppEstoque</string>
     <string name="title_activity_categorias">CategoriasActivity</string>
+    <string name="imagemproduto">imagemProduto</string>
+    <string name="salvar">salvar</string>
+    <string name="campo_obrigatorio">"Campo Obrigatorio"</string>
 </resources>

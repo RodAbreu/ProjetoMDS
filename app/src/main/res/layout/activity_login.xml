@@ -79,6 +79,7 @@
     <Button
             android:layout_width="150dp"
             android:background="@drawable/borda_button"
+            android:id="@+id/login_button"
             android:text="Entrar"
             android:textColor="@android:color/white"
             android:layout_height="wrap_content"
@@ -93,7 +94,7 @@
             android:orientation="horizontal">
 
             <Button
-                    android:id="@+id/login_button"
+                    android:id="@+id/login_facebook"
                     android:background="@drawable/facebook"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -102,7 +103,7 @@
                     android:layout_marginLeft="150dp"
                     android:layout_marginTop="10dp"/>
             <Button
-                    android:id="@+id/google"
+                    android:id="@+id/login_google"
                     android:background="@drawable/google"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
