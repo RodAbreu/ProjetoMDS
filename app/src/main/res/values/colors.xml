@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="azul_theme">#0072bc</color>
+
+    <color name="cinza">#ffbdbdbd</color>
 </resources>

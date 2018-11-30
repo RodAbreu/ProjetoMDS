@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".CadastraProdutoActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+    <requestFocus />
+
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:columnCount="2">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_columnSpan="2">
+
+            <ImageView
+                    android:id="@+id/imgFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/cinza"
+                    android:src="@drawable/baseline_add_photo_alternate_white_36"
+                    android:contentDescription="@string/imagemproduto" />
+
+            <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="6dp"
+                    android:src="@drawable/baseline_camera_alt_white_18"
+                    app:fabSize="normal"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"/>
+
+        </FrameLayout>
+
+
+        <TextView
+                android:text="Nome"
+                android:textSize="20sp"
+                android:layout_marginLeft="16dp"/>
+
+        <EditText
+                android:id="@+id/cadastraNome"
+                android:inputType="text"
+                android:layout_marginLeft="16dp"
+                android:hint="Digite o nome"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"/>
+
+        <TextView
+                android:text="Quantidade"
+                android:textSize="20sp"
+                android:layout_marginLeft="16dp"/>
+
+        <EditText
+                android:id="@+id/cadastraQuant"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:hint="Digite a quantidade"/>
+
+    </GridLayout>
+
+</ScrollView>
