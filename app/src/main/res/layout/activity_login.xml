@@ -76,15 +76,6 @@
             android:background="@drawable/borda">
     </EditText>
 
-    <Button
-            android:layout_width="150dp"
-            android:background="@drawable/borda_button"
-            android:id="@+id/login_button"
-            android:text="Entrar"
-            android:textColor="@android:color/white"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"/>
 
 
 
@@ -92,25 +83,36 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
+        <Button
+                android:layout_width="150dp"
+                android:background="@drawable/borda_button"
+                android:id="@+id/login_button"
+                android:text="Entrar"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"/>
 
-            <Button
-                    android:id="@+id/login_facebook"
-                    android:background="@drawable/facebook"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:gravity="center|bottom"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="10dp"/>
-            <Button
-                    android:id="@+id/login_google"
-                    android:background="@drawable/google"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:gravity="center|bottom"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"/>
+        <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button_facebook"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/facebook_app_id"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"/>
+        <!--<Button
+                android:id="@+id/login_google"
+                android:background="@drawable/google"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center|bottom"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>-->
 
     </LinearLayout>
 

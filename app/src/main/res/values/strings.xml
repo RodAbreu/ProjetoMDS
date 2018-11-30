@@ -4,4 +4,7 @@
     <string name="imagemproduto">imagemProduto</string>
     <string name="salvar">salvar</string>
     <string name="campo_obrigatorio">"Campo Obrigatorio"</string>
+    <string name="facebook_app_id">2150035985048573</string>
+    <string name="fb_login_protocol_scheme">fb2150035985048573</string>
+
 </resources>
