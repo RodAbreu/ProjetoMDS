@@ -6,6 +6,7 @@ import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Environment
 import android.util.Log
 import android.widget.Button
 import com.facebook.CallbackManager
@@ -19,13 +20,17 @@ import kotlinx.android.synthetic.main.activity_login.*
 import java.util.*
 import android.widget.Toast
 import com.facebook.FacebookSdk.getApplicationContext
+import java.io.File
+import java.io.IOException
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
+import java.text.SimpleDateFormat
 
 
 class LoginActivity : AppCompatActivity() {
 
     private var callbackManager: CallbackManager? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,6 +62,10 @@ class LoginActivity : AppCompatActivity() {
                 })
 
         }
+        login_button.setOnClickListener(){
+            val intent = Intent(this, ListaProdutosActivity::class.java)
+            startActivity(intent)
+        }
 
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -64,5 +73,6 @@ class LoginActivity : AppCompatActivity() {
 
         callbackManager?.onActivityResult(requestCode, resultCode, data)
     }
+
 
 }

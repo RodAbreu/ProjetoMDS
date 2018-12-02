@@ -48,6 +48,7 @@
             android:layout_gravity="bottom|right"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
+            android:src="@mipmap/ic_add_prod"
             android:elevation="6dp"
             app:fabSize="normal"/>
 

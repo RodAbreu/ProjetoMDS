@@ -51,15 +51,16 @@
         <EditText
                 android:id="@+id/cadastraNome"
                 android:inputType="text"
-                android:layout_marginLeft="16dp"
+                android:layout_marginLeft="1dp"
                 android:hint="Digite o nome"
-                android:layout_width="200dp"
+                android:layout_width="198dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="16dp"/>
 
         <TextView
                 android:text="Quantidade"
                 android:textSize="20sp"
+                android:layout_marginTop="16dp"
                 android:layout_marginLeft="16dp"/>
 
         <EditText
@@ -70,6 +71,30 @@
                 android:inputType="number"
                 android:layout_width="200dp"
                 android:hint="Digite a quantidade"/>
+        <TextView
+                android:text="Telefone fornecedor"
+                android:textSize="20sp"
+                android:layout_marginLeft="16dp" android:layout_width="109dp"/>
+
+        <EditText
+                android:id="@+id/cadastraTelefone"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:hint="Digite a quantidade"/>
+
+        <Button
+                android:id="@+id/button_ligar"
+                android:layout_marginTop="16dp"
+                android:text="Ligar"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:layout_width="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_row="20"
+                android:layout_column="1"/>
 
     </GridLayout>
 
