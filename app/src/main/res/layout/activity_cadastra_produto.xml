@@ -25,6 +25,7 @@
                     android:id="@+id/imgFoto"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
+                    android:scaleType="centerCrop"
                     android:background="@color/cinza"
                     android:src="@drawable/baseline_add_photo_alternate_white_36"
                     android:contentDescription="@string/imagemproduto" />
@@ -51,11 +52,10 @@
         <EditText
                 android:id="@+id/cadastraNome"
                 android:inputType="text"
-                android:layout_marginLeft="1dp"
+                android:layout_marginLeft="16dp"
                 android:hint="Digite o nome"
                 android:layout_width="198dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"/>
+                android:layout_height="wrap_content"/>
 
         <TextView
                 android:text="Quantidade"
@@ -83,18 +83,24 @@
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:layout_width="200dp"
-                android:hint="Digite a quantidade"/>
+                android:hint="Digite o telefone"/>
 
-        <Button
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2">
+
+            <Button
                 android:id="@+id/button_ligar"
-                android:layout_marginTop="16dp"
-                android:text="Ligar"
+                android:layout_marginTop="30dp"
+                android:text="Ligar para o Fornecedor"
                 android:textColor="#FFFFFF"
                 android:textSize="16dp"
-                android:layout_width="110dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_row="20"
-                android:layout_column="1"/>
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_column="0"/>
+        </FrameLayout>
+
 
     </GridLayout>
 
